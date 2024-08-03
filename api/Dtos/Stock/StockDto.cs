@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations.Schema;
 using api.Models;
+using api.Dtos.Comment;
 
 namespace api.Dtos.Stock
 {
@@ -17,5 +18,6 @@ namespace api.Dtos.Stock
         public string Industry { get; set; } = string.Empty;
         public long MarketCap { get; set; }
         // Comments - none right now
+        public List<CommentDto> Comments { get; set; }
     }
 }
